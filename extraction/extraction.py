@@ -5,7 +5,10 @@ creat time :    2018.12.14 11:52
 function description：
 提取xml文件的中制作voc数据集的基本信息：xmin,xmax,ymin,ymax和class_id，并且写成txt，格式为修改后的NWPU：
 class,(xmin,ymin),(xmax,ymax)
+
 attention:批量操作需谨慎，没看明白勿操作！！！
+(1)重命名处千万小心！每个部分只跑一次！！
+(2)a=input()大法好
 '''
 
 import os
@@ -141,7 +144,19 @@ a=input()
 
 
      
-
+##批量重命名voc(6位数)
+#label_path=r"D:\研究生\第一年\dataset\HRSC2016\label"
+#txt_files= os.listdir(txt_path) 
+#img_files=os.listdir(img_path)
+#label_files=os.listdir(label_path)
+#for file in txt_files:
+#    os.rename(txt_path+'/'+file,txt_path+'/'+file[3:]+'.txt')
+#for file in img_files:
+#    os.rename(img_path+'/'+file,img_path+'/'+file[3:])
+#for file in label_files:
+#    os.rename(label_path+'/'+file,label_path+'/'+file[3:])
+    
+   
 
 
 
