@@ -16,6 +16,7 @@ anno_path = r"D:\研究生\第一年\dataset\HRSC2016\Annotations"
 txt_path =  r"D:\研究生\第一年\dataset\HRSC2016\txt"
 
 Class_ID=[]
+
 '''
 files= os.listdir(anno_path)                            #得到文件夹下的所有文件名称
 flag=0
@@ -79,6 +80,7 @@ for file in files:                                      #每个文件名称
 #Class_ID.sort()                                     #从小到大排序
 #print(Class_ID,len(Class_ID))
 ##获取每类出现次数,number与Class_ID索引对应位相对应
+#number=[0 for n in range(len(Class_ID))]
 #for file in files:
 #     with open(anno_path+'/'+file,'r') as fd:
 #         lines=fd.readlines()
