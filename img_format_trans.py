@@ -23,4 +23,3 @@ def bmpToJpg(file_path):
         im = Image.open(file_path+"\\"+fileName)
         im.save(file_path+"\\"+newFileName)
 '''
-
