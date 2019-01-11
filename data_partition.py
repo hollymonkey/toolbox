@@ -1,6 +1,13 @@
 #2018年12月17日 
 #author: ming71
 
+‘’‘
+将含有全部文件名的name文件（不带路径）划分数据集得到训练验证测试的txt(不是最终的，最终还要运行voc_label)
+只需要改变三个参数：
+train_ratio=0.8
+val_ratio=0.1
+total=2055 
+’‘’
 import os 
 import sys
 import random
